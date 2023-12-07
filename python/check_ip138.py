@@ -5,7 +5,6 @@ import re
 import sys
 
 
-
 def ISIP(s):
     return len([i for i in s.split('.') if (0<= int(i)<= 255)])== 4
 
