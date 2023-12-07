@@ -21,7 +21,6 @@ def  pinger(ip):
 	print "%s\t\t%s\t\t%s\t\t%s\t\t%s"%(ip,packet_loss,rtt_min,rtt_max,rtt_avg)
 
 
-
 if __name__ == "__main__":
     if not os.path.exists("hosts.txt") :
 	print "\033[31mhosts.txt文件不存在，请重试\033[0m"
