@@ -26,7 +26,7 @@ def DO(domain):
 
 if __name__ == "__main__":
 	if len(sys.argv) < 2:
-		print "请输入IP地址或者域名 (例如:192.168.1.1 / www.baidu.com)"
+		print "请输入IP地址或者域名"
 		sys.exit()
 	INPUT=sys.argv[1]
 	if not re.findall('(\d{1,3}\.){3}\d{1,3}',INPUT):
