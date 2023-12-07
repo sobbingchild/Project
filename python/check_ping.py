@@ -5,6 +5,7 @@ import re
 import sys,os
 import commands
 import datetime
+
 def  pinger(ip):
 	cmd='ping -c 2 %s' % (ip.strip())
 	ret = commands.getoutput(cmd)
