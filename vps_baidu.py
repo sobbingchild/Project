@@ -11,10 +11,7 @@ def mysql_backup():
 	db_user='root'
 	db_password='password'
 	mysqldump='/usr/local/mysql/bin/mysqldump'
-
-	#print db_bak_name	
 	cmd="%s -u%s  -p%s --database  wordpress >  %s"%(mysqldump,db_user,db_password,db_bak_name)
-
 	if os.popen(cmd):
 		tar=tarfile.open(db_bak,'w:bz2')
 		tar.add(db_bak_name)
